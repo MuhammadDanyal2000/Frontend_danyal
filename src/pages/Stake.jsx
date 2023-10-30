@@ -3,9 +3,12 @@ import Home from './Home'
 
 const Stake = () => {
   return (
-    <div>
+    <div className='text-white'>
     <Home/>
-    Stake
+   <div className='text-white'>
+   kkjkjddkskfkask
+   </div>
+    
     </div>
   )
 }

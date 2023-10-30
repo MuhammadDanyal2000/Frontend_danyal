@@ -13,6 +13,9 @@ module.exports = {
         hero2: "url(src/assets/images/hero2.jpg)",
         hero3: "url(src/assets/images/hero3.jpg)",
       },
+      width:{
+        hello:"24px"
+      }
     },
   },
   plugins: [],
