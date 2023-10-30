@@ -3,7 +3,7 @@ import React from 'react'
 const SignIn = () => {
   return (
     <>
-    <div className="flex my-14 mx-96 min-h-full flex-1 flex-col justify-center items-center px-6 py-12 lg:px-8  bg-white bg-opacity-20 rounded-lg shadow-lg">
+    <div className="flex min-h-full flex-1 flex-col justify-center items-center px-6 py-12 lg:px-8 ">
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
           
           <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-orange-500">
@@ -34,11 +34,7 @@ const SignIn = () => {
                 <label htmlFor="password" className="block text-sm font-medium leading-6 text-orange-500">
                   Password
                 </label>
-                <div className="text-sm">
-                  <a href="#" className="font-semibold text-orange-600 hover:text-orange-500">
-                    Forgot password?
-                  </a>
-                </div>
+                
               </div>
               <div className="mt-2">
                 <input

@@ -17,9 +17,9 @@ const Home = () => {
     { name: "Me", link: "/Me", icon: FiFolder },
    
   ];
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
   return (
-    <div className="flex justify-between mr-4 ">
+    <div className=" mr-1 flex justify-between sm:mr-4 ">
     
       <div
         className={`bg-[#2a2727] bg-opacity-70 min-h-screen ${
@@ -65,11 +65,11 @@ const Home = () => {
         </div>
       </div>
       <div className="mt-5">
-      <div className="flex gap-5">
+      <div className="flex gap-1 sm:gap-5">
       <Link to="/SignIn">
-        <button className=" hover:bg-yellow-900 text-orange-500  bg-transparent text-orange-500-500 font-semibold py-2 px-4 border border-orange-500 rounded">Sign In</button></Link>
+        <button className="text-xs px-1 py-1 hover:bg-yellow-900 text-orange-500  bg-transparent text-orange-500-500 font-semibold sm:py-2 sm:px-4 border border-orange-500 rounded ">Sign In</button></Link>
         <Link to="/SignUp">
-        <button className=" hover:bg-yellow-900 text-orange-500  bg-transparent text-orange-500-500 font-semibold py-2 px-4 border border-orange-500 rounded">Sign Up</button></Link>
+        <button className="text-xs px-1 py-1 hover:bg-yellow-900 text-orange-500  bg-transparent text-orange-500-500 font-semibold sm:py-2 sm:px-4 border border-orange-500 rounded">Sign Up</button></Link>
       </div>
         
       </div>
