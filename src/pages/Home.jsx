@@ -18,48 +18,30 @@ const Home = () => {
     { name: "Me", link: "/Me", icon: FiFolder },
    
   ];
-  const [open, setOpen] = useState(false);
+  
   return (
     <div>
-    <div className="flex justify-between ">
-    <div className="w-20 h-full fixed">
+    <div className="flex justify-center sm:justify-start">
+    {/* navbar */}
+    <div className="flex flex-col-reverse items-center h-full fixed sm:flex-row ">
     
       <div
-        className={`bg-[#2a2727] bg-opacity-70 min-h-screen ${
-          open ? "w-72" : "w-16"
-        } duration-500 text-white px-4`}
+        className="bg-[#2a2727] bg-opacity-70 min-w-screen h-16 sm:h-16 sm:min-h-screen
+        duration-500 text-white px-4 mb-0"
       >
-        <div className="py-3 flex justify-end">
-          <HiMenuAlt3
-            size={26}
-            className="cursor-pointer"
-            // onClick={() => setOpen(!open)}
-          />
-        </div>
-        <div className="mt-4 flex flex-col gap-4 relative">
+        
+       
+        <div className="mt-4 flex flex-row gap-6  relative sm:flex-col">
           {menus?.map((menu, i) => (
             <Link
               to={menu?.link}
               key={i}
-              className={` ${
-                menu?.margin && "mt-5"
-              } group flex items-center text-sm  gap-3.5 font-medium p-2 hover:bg-yellow-900 rounded-md`}
+              className="group flex items-center text-sm  gap-3.5 font-medium p-2 hover:bg-yellow-900 rounded-md"
             >
               <div>{React.createElement(menu?.icon, { size: "20" })}</div>
+              
               <h2
-                style={{
-                  transitionDelay: `${i + 3}00ms`,
-                }}
-                className={`whitespace-pre duration-500 ${
-                  !open && "opacity-0 translate-x-28 overflow-hidden"
-                }`}
-              >
-                {menu?.name}
-              </h2>
-              <h2
-                className={`${
-                  open && "hidden"
-                } absolute left-48 bg-white font-semibold whitespace-pre text-gray-900 rounded-md drop-shadow-lg px-0 py-0 w-0 overflow-hidden group-hover:px-2 group-hover:py-1 group-hover:left-14 group-hover:duration-300 group-hover:w-fit  `}
+                className=" absolute left-48 bg-white font-semibold whitespace-pre text-gray-900 rounded-md drop-shadow-lg px-0 py-0 w-0 overflow-hidden group-hover:py-2 group-hover:px-1 group-hover:right-14 sm:group-hover:left-14 group-hover:duration-300 group-hover:w-fit "
               >
                 {menu?.name}
               </h2>
@@ -68,6 +50,7 @@ const Home = () => {
         </div>
       </div>
       </div>
+      {/* navbar */}
       {/* header */}
       <div className="w-full mt-5 mr-3">
       <div className="flex flex-row-reverse gap-1 sm:gap-5">
@@ -77,7 +60,7 @@ const Home = () => {
         <button className="text-xs px-1 py-1 hover:bg-yellow-900 text-orange-500  bg-transparent text-orange-500-500 font-semibold sm:py-2 sm:px-4 border border-orange-500 rounded">Sign Up</button></Link>
       </div>
         {/* //body */}
-      <div className=" flex mt-2 flex-col ml-20">
+      <div className=" flex mt-2 flex-col ml-3 sm:ml-20">
       <div className="text-white py-2">
       Up Next
       </div>
@@ -147,7 +130,7 @@ const Home = () => {
        </div>
        {/* more */}
       
-       <div className=" flex mt-2 flex-col ml-20">
+       <div className=" flex mt-2 flex-col ml-3 sm:ml-20">
       <div className="text-white py-2">
       Later Today
       </div>
@@ -216,7 +199,7 @@ const Home = () => {
    
        </div>
       {/* more */}
-      <div className=" flex mt-2 flex-col ml-20">
+      <div className=" flex mt-2 flex-col ml-3 sm:ml-20">
       <div className="text-white py-2">
       Tommorow
       </div>
@@ -285,7 +268,7 @@ const Home = () => {
    
        </div>
        {/* more */}
-       <div className=" flex mt-2 flex-col ml-20">
+       <div className=" flex mt-2 flex-col ml-3 sm:ml-20">
       
       
        <div className="bg-[#292828] rounded-2xl divide-gray-500 divide-y-2 mt-5 ">
