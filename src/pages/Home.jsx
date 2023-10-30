@@ -94,8 +94,14 @@ const Home = () => {
        </div>
        <div className="flex flex-col px-6 py-4">
         <p>09:00 PM - OCTOBAR 30</p>
-        <div>
-          hllo
+        <div className="flex justify-between">
+         <div>hello</div>
+         <div>hello</div>
+
+         <div>hello</div>
+
+         <div>hello</div>
+
         </div>
        </div>
             
