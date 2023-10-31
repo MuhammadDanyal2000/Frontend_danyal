@@ -61,10 +61,10 @@ const Home = () => {
       </div>
         {/* //body */}
       <div className=" flex mt-2 flex-col ml-3 sm:ml-20">
-      <div className="text-white py-2">
-      Up Next
+      <div className="text-white text-2xl font-extrabold py-2">
+      Up <span className="text-pink-600">Next</span>
       </div>
-       <div className="bg-[#292828] rounded-2xl divide-gray-500 divide-y-2 ">
+       <div className="bg-[#2a2727] rounded-2xl divide-gray-500 divide-y-2 ">
        <div className="rounded-tl-2xl border-l-8 border-l-pink-700 hover:bg-gray-600 hover:bg-opacity-20 ">
        <div className="flex px-4 py-4 sm:px-10">
         <img className="w-8 h-8" src={picture}/>
@@ -131,8 +131,8 @@ const Home = () => {
        {/* more */}
       
        <div className=" flex mt-2 flex-col ml-3 sm:ml-20">
-      <div className="text-white py-2">
-      Later Today
+      <div className="text-white text-2xl font-extrabold py-2">
+      Later <span className="text-pink-600">Today</span>
       </div>
        <div className="bg-[#292828] rounded-2xl divide-gray-500 divide-y-2 ">
        <div className="rounded-tl-2xl border-l-8 border-l-orange-700 hover:bg-gray-600 hover:bg-opacity-20 ">
@@ -200,7 +200,7 @@ const Home = () => {
        </div>
       {/* more */}
       <div className=" flex mt-2 flex-col ml-3 sm:ml-20">
-      <div className="text-white py-2">
+      <div className="text-white text-2xl font-extrabold py-2">
       Tommorow
       </div>
        <div className="bg-[#292828] rounded-2xl divide-gray-500 divide-y-2 ">
