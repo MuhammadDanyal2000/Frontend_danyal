@@ -26,8 +26,8 @@ const Home = () => {
     <div className="flex flex-col-reverse items-center h-full fixed sm:flex-row ">
     
       <div
-        className="bg-[#2a2727] bg-opacity-70 min-w-screen h-16 sm:h-16 sm:min-h-screen
-        duration-500 text-white px-4 mb-0"
+        className="bg-[#2a2727] bg-opacity-50 min-w-screen h-16 sm:h-16 sm:min-h-screen
+       text-white px-4 mb-0"
       >
         
        
@@ -55,9 +55,9 @@ const Home = () => {
       <div className="w-full mt-5 mr-3">
       <div className="flex flex-row-reverse gap-1 sm:gap-5">
       <Link to="/SignIn">
-        <button className="text-xs px-1 py-1 hover:bg-yellow-900 text-orange-500  bg-transparent text-orange-500-500 font-semibold sm:py-2 sm:px-4 border border-orange-500 rounded ">Sign In</button></Link>
+        <button className="text-xs px-1 py-1 hover:bg-yellow-700 text-white font-semibold sm:py-2 sm:px-4 bg-[#2a2727] bg-opacity-40 rounded ">Sign In</button></Link>
         <Link to="/SignUp">
-        <button className="text-xs px-1 py-1 hover:bg-yellow-900 text-orange-500  bg-transparent text-orange-500-500 font-semibold sm:py-2 sm:px-4 border border-orange-500 rounded">Sign Up</button></Link>
+        <button className="text-xs px-1 py-1 hover:bg-yellow-700 text-white font-semibold sm:py-2 sm:px-4 bg-[#2a2727] bg-opacity-40 rounded">Sign Up</button></Link>
       </div>
         {/* //body */}
       <div className=" flex mt-2 flex-col ml-3 sm:ml-20">
