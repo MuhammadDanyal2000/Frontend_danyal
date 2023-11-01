@@ -8,6 +8,8 @@ module.exports = {
         poppins: "Poppins",
         kaushan: "Kaushan Script",
       },
+      
+
       backgroundImage: {
         hero1: "url(src/assets/images/hero1.jpg)",
         hero2: "url(src/assets/images/hero2.jpg)",

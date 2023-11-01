@@ -6,7 +6,7 @@ const SignUp = () => {
     <div className="flex  w-auto py-6 flex-col sm:bg-[#2a2727] sm:bg-opacity-80 items-center sm:px-8 ">
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
           
-          <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-white sm:max-w-sm">
+          <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-white sm:max-w-smnpm ">
             Don't have a acccount <span className='text-yellow-500'>Sign Up</span>
           </h2>
         </div>
